@@ -1,0 +1,127 @@
+.getting {
+  position: relative;
+  width: 100%;
+  min-height: 45rem;
+  background-color: #7224ea;
+  padding: 4.375rem 0rem 5rem 0rem;
+  z-index: 1000;
+  overflow-x: hidden;
+}
+.content {
+  margin: auto;
+  max-width: 73.125rem;
+  color: white;
+}
+
+.content h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.625rem;
+  letter-spacing: 0em;
+  text-align: left;
+  z-index: 1000;
+}
+
+.getters {
+  max-width: 48.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 4.8125rem;
+}
+
+.getters__item {
+  display: flex;
+  align-items: center;
+  width: 23.375rem;
+  height: 7.5rem;
+  background-color: #fff;
+  padding: 0rem 1.75rem 0rem 2.5rem;
+  gap: 1.375rem;
+  color: black;
+  z-index: 1000;
+  margin-top: 1.625rem;
+}
+
+.getters__item i::before {
+  font-size: 2.375rem;
+  color: #651fff;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.getters__item p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.button {
+  margin-top: 3.875rem;
+  background: url(../img/getting/Rectangle.svg);
+  width: 316px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.getting__decorated {
+  max-width: 48.8125rem;
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  z-index: -10;
+}
+
+@media screen and (max-width: 769px) {
+  .getting__decorated {
+    display: none;
+  }
+  .getting {
+    padding-left: 8.75rem;
+  }
+
+  .getters__item {
+    width: 17.125rem;
+    height: 5rem;
+    padding: 0rem 0.875rem 0rem 1.25rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .content {
+    max-width: 26.3333rems;
+  }
+
+  .content h2 {
+    padding-left: 1rem;
+  }
+  .getting {
+    padding-left: 0;
+    padding-bottom: 2.5rem;
+  }
+  .getters {
+    margin-top: 3.0833rem;
+    padding-left: 1rem;
+  }
+  .getters__item {
+    width: 22.8rem;
+    height: 6.6rem;
+    padding: 0rem 1.16rem 0rem 1.6625rem;
+  }
+}
